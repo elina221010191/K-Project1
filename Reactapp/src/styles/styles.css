@@ -1,0 +1,44 @@
+ .nav{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 100px;
+        background-color: blue;
+        margin-top: 80px;
+        margin-bottom: 10px;
+        font-size: 100px;
+        height: 50px;
+        color: white;
+        font-size: large;
+        text-decoration: none;
+        text-decoration: none;
+        list-style: none;
+        gap: 2rem;
+        cursor: pointer;
+    }
+    .nav:hover{
+        color: black;
+    }
+    .log3{
+        display: flex;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-left: 400px;
+    }
+    /* .search{
+        margin-left: 600px;
+        margin-top: 10px;
+    } */
+    .log{
+        margin-left: 100px;
+    }
+    select{
+        background-color: blue;
+    }
+    .log2{
+        background-color: white;
+    }
+
+
+ 

@@ -1,0 +1,9 @@
+*{
+    text-align: center;
+}
+
+.card1-container{
+    display: flex;
+    gap: 5rem;
+    padding-left: 100px;
+}
