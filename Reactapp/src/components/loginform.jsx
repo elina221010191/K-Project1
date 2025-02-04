@@ -9,11 +9,13 @@ const LoginForm = ({handleForm}) =>
         <div className='formContainer'>
             <form className='form'>
             <IoIosCloseCircle onClick={handleForm} />
+            <div className="fm">
             <input type="text" placeholder='Enter name' required></input>
             <input type="text" placeholder='Enter Password' required></input>
+            </div>
             <button type="button" className='btn'>Login</button>
             </form>
         </div>
     )
 }
-export default LoginForm
+export default LoginForm;

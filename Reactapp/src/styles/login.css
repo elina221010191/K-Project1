@@ -13,12 +13,14 @@
 .form{
     display: flex;
     flex-direction: column;
-    gap:0.3rem;
+    gap:3rem;
     background-color:white;
+    width: 20rem;
+    border-radius: 8px;
 }
 .btn
 {
     width: 5rem;
-    background-color: rgb(43, 85, 0.5);
-    border:none;
+    background-color:blue;
+    border-radius: 8px;
 }

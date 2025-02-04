@@ -88,11 +88,12 @@ function Navbar(){
         <Link to="/Contact">
         <li>Contact</li>
         </Link>
+        <button className="button" onClick={handleForm}>link</button>
         <IoCallSharp />
         <li>800-123-4567</li>
         </section>
         </div>
-        <button className="button" onClick={handleForm}></button>
+      
         </div>
         
     )
