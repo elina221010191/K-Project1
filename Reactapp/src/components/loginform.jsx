@@ -1,21 +1,19 @@
-import React from "react"
-import "../styles/login.css"
-import { MdClose } from "react-icons/md";
+import React from 'react'
+import '../styles/login.css'
+import { IoIosCloseCircle } from "react-icons/io";
+
+
 const LoginForm = ({handleForm}) =>
 {
-    return (
-        <div className="Overlay">
-            <div className="Modal">
-            <form className="form"></form>
-            <MdClose onClick={handleForm}/>
-            <input type="text" placeholder="enter name"></input>
-            <input type="password" placeholder="enter password"></input>
-            <button type="login" className="button">login</button>
-                login
-        
-            
-        </div>
+    return(
+        <div className='formContainer'>
+            <form className='form'>
+            <IoIosCloseCircle onClick={handleForm} />
+            <input type="text" placeholder='Enter name' required></input>
+            <input type="text" placeholder='Enter Password' required></input>
+            <button type="button" className='btn'>Login</button>
+            </form>
         </div>
     )
 }
-export default LoginForm;
+export default LoginForm

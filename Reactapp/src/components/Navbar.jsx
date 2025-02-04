@@ -6,8 +6,8 @@ import { IoPersonOutline } from "react-icons/io5";
 import { LuMessageSquareMore } from "react-icons/lu";
 import { FaRegHeart } from "react-icons/fa";
 import '../styles/styles.css';
-import UsestateHook from "./usestateHook";
 import LoginForm from "./loginform";
+import "../styles/login.css";
 function Navbar(){
     const [form, setForm] = useState(false);
     const handleForm = () =>
