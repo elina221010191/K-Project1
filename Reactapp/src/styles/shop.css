@@ -1,3 +1,10 @@
 *{
     text-align: center;
 }
+.body{
+    float: left;
+}
+.shop{
+/*  justify-items: center;*/
+}
+

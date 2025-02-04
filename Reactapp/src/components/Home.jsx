@@ -70,25 +70,25 @@ function Home(){
             image: "/hhh1.jpg"
         },
         {
-            id: 11,
+            id: 12,
             title: "Digital Good's Store",
             content: "New York, NY",
             image: "/hhh2.jpg"
         },
         {
-            id: 12,
+            id: 13,
             title: "Jessica's Store",
             content: "New York, NY",
             image: "/hhhh.jpg"
         },
         {
-            id: 13,
+            id: 14,
             title: "The Glass Store",
             content: "New York, NY",
             image: "/hhhh1.jpg"
         },
         {
-            id: 14,
+            id: 15,
             title: "John Doe's Store",
             content: "New York, NY",
             image: "/hhhh2.jpg"
@@ -106,13 +106,12 @@ function Home(){
             <li>Woman Clothes</li>
             <li>Shoes</li>
             <li>Watches</li>
-            <li>Popular Categories</li>
             </ul>
+            <h2>Popular Categories</h2>
 </div>
             <h1 className="home-title">Explore our latest and greatest electronics</h1>
             <button className="button">Shop now</button>
             <div className="card-container">
-            <h1 className="home-title">New Arrivals</h1>    
                 {cards.map((card) => (
                     <div key={card.id} className="card">
                         <img src={card.image} alt={card.title} className="card-image"/>
@@ -122,8 +121,7 @@ function Home(){
                         </div>
                     </div>
                 ))}
-                
-            </div>
+                </div>
         </div>
     )
 }

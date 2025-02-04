@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from "react-router-dom";
 import { IoCallSharp } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { IoPersonOutline } from "react-icons/io5";
 import { LuMessageSquareMore } from "react-icons/lu";
 import { FaRegHeart } from "react-icons/fa";
-
 import '../styles/styles.css';
+import UsestateHook from "./usestateHook";
+import LoginForm from "./loginform";
 function Navbar(){
+    const [form, setForm] = useState(false);
+    const handleForm = () =>
+    {
+      setForm(!form);
+    }
     return(
         <div className="log"
         style={{
@@ -17,6 +23,7 @@ function Navbar(){
                 display:"flex",
                 gap:"80px"
             }}>
+                {form && <LoginForm handleForm={handleForm}/>}
             <div><h2 className="log1">Botiga</h2></div>
             <select className="log2">
             <option className="all">All Categories</option>
@@ -85,10 +92,10 @@ function Navbar(){
         <li>800-123-4567</li>
         </section>
         </div>
+        <button className="button" onClick={handleForm}></button>
         </div>
         
     )
 }
 export default Navbar
-
 

@@ -54,6 +54,7 @@
     width: 100%;
     height: 180px;
     object-fit: cover;
+    justify-items: center;
 }
 
 /* Card Content */
