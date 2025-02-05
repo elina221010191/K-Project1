@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom"
 import "../styles/home.css"
+import {useNavigate} from 'react-router-dom';
 function Home(){
     const cards = [
         {
@@ -94,7 +95,12 @@ function Home(){
             image: "/hhhh2.jpg"
         }
     ];
+    const navigation = useNavigate();
+    const handleNavigate = (id) => {
+        navigation(`/SinglePage/${id}`)
+    }
     return(
+
         <div className="home">
             <div className="homecontent">
                 <ul>
@@ -118,6 +124,7 @@ function Home(){
                         <div className="card-content">
                             <h2 className="card-title">{card.title}</h2>
                             <p className="card-text">{card.content}</p>
+                            <button type="button" className="button1" onClick={() =>handleNavigate(card.id)}>View</button>
                         </div>
                     </div>
                 ))}

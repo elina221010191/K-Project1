@@ -14,7 +14,7 @@ function Contact(){
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
-            
+        <div className="contact-container"  >
         <div className="contact1">
         <h1 Leave Us a Message></h1>
         <h4>Name*</h4>
@@ -39,10 +39,10 @@ function Contact(){
             <li>Mon to Sat: 10 AM – 5:30 PM</li>
             </ul>
             </div>
+            </div>  
         </div>
         </div>
         </div>
-
     )
 }
 export default Contact

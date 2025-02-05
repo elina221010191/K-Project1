@@ -1,4 +1,10 @@
 *{
     text-align: center;
 }
+.contact-container{
+    display: flex;
+}
+.contact-right{
+    float: right;
+}
    

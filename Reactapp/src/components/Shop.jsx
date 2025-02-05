@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/shop.css'
-import { CiStar } from "react-icons/ci";
+import { FaStar } from "react-icons/fa";
 import { LiaCircleSolid } from "react-icons/lia";
 import shop from "../assets/shop.jpg"
 function Shop(){
@@ -80,11 +80,11 @@ function Shop(){
                             <LiaCircleSolid size={30}/>
                             <LiaCircleSolid size={30}/>
                             <p>Rating</p>
-                            <CiStar size={20}/>
-                            <CiStar size={20}/>
-                            <CiStar size={20}/>
-                            <CiStar size={20}/>
-                            <CiStar size={20}/>
+                            <FaStar size={20}/>
+                            <FaStar size={20}/>
+                            <FaStar size={20}/>
+                            <FaStar size={20}/>
+                            <FaStar size={20}/>
                             <p>Price</p>
 
 
@@ -101,11 +101,11 @@ function Shop(){
                                 <p className="card-text">{card.content}</p>
                             </div>
                             <div className="icon">
-                            <CiStar size={20}/>
-                            <CiStar size={20}/>
-                            <CiStar size={20}/>
-                            <CiStar size={20}/>
-                            <CiStar size={20}/>
+                            <FaStar size={20}/>
+                            <FaStar size={20}/>
+                            <FaStar size={20}/>
+                            <FaStar size={20}/>
+                            <FaStar size={20}/>
                             </div>
                             <div className="iconn">
                             <LiaCircleSolid size={30}/>

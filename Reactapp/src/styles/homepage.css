@@ -1,0 +1,27 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 05rem;
+}
+.cont1{
+    width: 9rem;
+    height: 4rem;
+}
+.button11{
+    width: 5rem;
+    background-color: black;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    padding: 3px;
+
+}
+.button11:hover{
+    color: white;
+    transform: translateY();
+}
+.navcontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}

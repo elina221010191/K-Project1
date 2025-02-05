@@ -88,7 +88,10 @@ function Navbar(){
         <Link to="/Contact">
         <li>Contact</li>
         </Link>
-        <button className="button" onClick={handleForm}>link</button>
+        <Link to="/view">
+        <li>view</li>
+        </Link>
+        <button className="button" onClick={handleForm}>login</button>
         <IoCallSharp />
         <li>800-123-4567</li>
         </section>

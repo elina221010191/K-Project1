@@ -8,6 +8,9 @@ import Blog from './components/Blog'
 import Shop from './components/Shop'
 import Venders from './components/Venders'
 import Contact from './components/Contact'
+import "bootstrap/dist/css/bootstrap.min.css"
+import HomePage from './components/HomePage'
+import SinglePage from './components/SinglePage'
 
 
 
@@ -23,8 +26,10 @@ function App() {
           <Route path='Venders' index element={<Venders/>}/>
           <Route path='Blog' index element={<Blog/>}/>
           <Route path='Contact' index element={<Contact/>}/>
-           </Route> 
-        </Routes>
+          <Route path='/view' element={<HomePage/>}/>
+          <Route path="/SinglePage/:id" element={<SinglePage/>}/>
+          </Route>
+          </Routes> 
     </BrowserRouter>
    )
 }
