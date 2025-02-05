@@ -27,7 +27,7 @@ function App() {
           <Route path='Blog' index element={<Blog/>}/>
           <Route path='Contact' index element={<Contact/>}/>
           <Route path='/view' element={<HomePage/>}/>
-          <Route path="/SinglePage/:id" element={<SinglePage/>}/>
+          <Route path="/singlepage/:id" element={<SinglePage/>}/>
           </Route>
           </Routes> 
     </BrowserRouter>

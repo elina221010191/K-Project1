@@ -1,10 +1,26 @@
-*{
-    text-align: center;
+.map{
+    margin-top: 70px;
+    margin-left: 100px;
 }
-.contact-container{
+
+.formClass{
+
+    margin-left: 100px;
+}
+
+.formClass{
     display: flex;
+    flex-direction: row;
+    gap:200px;
 }
-.contact-right{
-    float: right;
+
+.form-label{
+    font-weight: bold;
+}
+
+.asteriskIcon{
+    color: red;
+    width: 8px;
+    height: 8px;
 }
    

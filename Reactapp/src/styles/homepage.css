@@ -9,8 +9,8 @@
 }
 .button11{
     width: 5rem;
-    background-color: black;
-    color: black;
+    background-color: grey;
+    color: white;
     border: none;
     border-radius: 2px;
     padding: 3px;
@@ -19,6 +19,7 @@
 .button11:hover{
     color: white;
     transform: translateY();
+    background-color: black;
 }
 .navcontainer{
     display: flex;
