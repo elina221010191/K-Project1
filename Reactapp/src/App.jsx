@@ -11,6 +11,7 @@ import Contact from './components/Contact'
 import "bootstrap/dist/css/bootstrap.min.css"
 import HomePage from './components/HomePage'
 import SinglePage from './components/SinglePage'
+import ShopPage from './components/ShopPage'
 
 
 
@@ -21,7 +22,7 @@ function App() {
         <Routes>
 
           <Route path='/' element={<Layout/>}>
-          <Route  path="/" index element={<Home/>} />
+          <Route  path="Home" index element={<Home/>} />
           <Route path='Shop' index element={<Shop/>}/>
           <Route path='Venders' index element={<Venders/>}/>
           <Route path='Blog' index element={<Blog/>}/>

@@ -99,6 +99,7 @@ function Shop(){
                             <div className="card-content">
                                 <h2 className="card-title">{card.title}</h2>
                                 <p className="card-text">{card.content}</p>
+                                <button type="button" className="button11" onClick={() =>handleNavigate(card.id)}>View</button>
                             </div>
                             <div className="icon">
                             <FaStar size={20}/>

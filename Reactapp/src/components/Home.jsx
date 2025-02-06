@@ -4,7 +4,7 @@ import "../styles/home.css"
 import {useNavigate} from 'react-router-dom';
 function Home(){
     const cards = [
-        {
+       {
             id: 1,
             title: "Body Lotion",
             content: "",

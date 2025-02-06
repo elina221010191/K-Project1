@@ -13,7 +13,7 @@ const LoginForm = ({handleForm}) =>
             <input type="text" placeholder='Enter name' required></input>
             <input type="text" placeholder='Enter Password' required></input>
             </div>
-            <button type="button" className='btn'>Login</button>
+            {/* <button type="button" className='btn'></button> */}
             </form>
         </div>
     )
