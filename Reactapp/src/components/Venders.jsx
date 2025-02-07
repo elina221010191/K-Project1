@@ -49,11 +49,11 @@ function Venders(){
                 <div>
                     <div className="main2">
                 <div className="main">
-                <h1>Total stores showing:6 </h1>
+                <h1 classsName="total">Total stores showing:6 </h1>
                 <div className="main1">
                 <button className="filter">Filter</button>
                 <BiFilter />
-                <h1>Sort by:<button>Most Recent </button></h1>
+                <h1 className="sort">Sort by:<button className="most">Most Recent </button></h1>
                 <BiGridSmall />
                                 <BiMenu />
                                 </div>

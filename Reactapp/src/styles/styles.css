@@ -78,7 +78,7 @@
     gap: 20px;
     list-style: none;
     padding: 0;
-    margin-top: 25px;
+    /* margin-top: 10px; */
 }
 .nav-center a {
     text-decoration: none;

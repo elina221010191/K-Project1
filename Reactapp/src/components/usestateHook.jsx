@@ -13,7 +13,7 @@ const UsestateHook = ({ handleLoginForm }) => {
         <form className="formcontainer">
           <div className="head">
             <h1 className="loginHeader">
-              Login <LuLogIn className="loginicon"/>
+              Botiga <LuLogIn className="loginicon"/>
             </h1>
             <IoClose onClick={handleLoginForm} className="iconhead" />
           </div>
