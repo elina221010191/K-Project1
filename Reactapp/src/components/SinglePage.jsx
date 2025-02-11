@@ -55,7 +55,7 @@ function SinglePage(){
     </div>
     <div>
         <div>
-        <button className='cartBtn'>Buy Now</button>
+       {/* <button className='cartBtn'>Buy Now</button> */}
         </div>
    
     </div>

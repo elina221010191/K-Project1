@@ -8,7 +8,7 @@ import { IoPersonOutline } from "react-icons/io5";
 // import { PiNumberCircleZeroFill } from "react-icons/pi";
 import { FaRegMessage } from "react-icons/fa6";
 import { useState } from 'react';
-import UsestateHook from './UsestateHook';
+import UsestateHook from './usestateHook';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -76,6 +76,9 @@ function Navbar() {
                 <Link to="/Venders"><li>Venders</li></Link>
                 <Link to="/Blog"><li>Blog</li></Link>
                 <Link to="/Contact"><li>Contact</li></Link>
+                <Link to="/Homeproduct">
+                <li>Homeproduct</li>
+                </Link>
                 {/* <Link to="/View"><li>View</li></Link> */}
                 {/* <Link to="/usestateHook"><li>Hook</li></Link> */}
                 {/* <Link to="/Home2"><li>Home2</li></Link> */}

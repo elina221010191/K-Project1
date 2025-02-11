@@ -44,22 +44,22 @@ function Venders(){
             }
         ];
         return(
-            <div className="vendors">
-                <h1 className="store">storelists</h1>
-                <div>
-                    <div className="main2">
-                <div className="main">
-                <h1 classsName="total">Total stores showing:6 </h1>
-                <div className="main1">
-                <button className="filter">Filter</button>
-                <BiFilter />
-                <h1 className="sort">Sort by:<button className="most">Most Recent </button></h1>
-                <BiGridSmall />
-                                <BiMenu />
-                                </div>
-                </div>
-                </div>
-                </div>
+            // <div className="vendors">
+            //     <h1 className="store">storelists</h1>
+            //     <div>
+            //         <div className="main2">
+            //     <div className="main">
+            //     <h1 classsName="total">Total stores showing:6 </h1>
+            //     <div className="main1">
+            //     <button className="filter">Filter</button>
+            //     <BiFilter />
+            //     <h1 className="sort">Sort by:<button className="most">Most Recent </button></h1>
+            //     <BiGridSmall />
+            //                     <BiMenu />
+            //                     </div>
+            //     </div>
+            //     </div>
+            //     </div>
                 <div className="card1-container">
                     {cards.map((card) =>(
                         <div key={card.id} className="card">
@@ -70,7 +70,7 @@ function Venders(){
                 </div>
         ))}
             </div>
-        </div>
+        //</div>
     )
 }
 export default Venders;

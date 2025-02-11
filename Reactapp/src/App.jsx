@@ -11,7 +11,8 @@ import Contact from './components/Contact'
 import "bootstrap/dist/css/bootstrap.min.css"
 import HomePage from './components/HomePage'
 import SinglePage from './components/SinglePage'
-import ShopPage from './components/ShopPage'
+//import ShopPage from './components/ShopPage'
+import HomeProduct from './components/HomeProduct'
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='Contact' index element={<Contact/>}/>
           <Route path='/view' element={<HomePage/>}/>
           <Route path="/singlepage/:id" element={<SinglePage/>}/>
+          <Route path='/Homeproduct' element={<HomeProduct/>}/>
           </Route>
           </Routes> 
     </BrowserRouter>

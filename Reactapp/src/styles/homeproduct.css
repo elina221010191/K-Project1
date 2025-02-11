@@ -1,0 +1,19 @@
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: ;
+    background-color: white;
+    
+}
+.input-f{
+    width: 10rem;
+
+}
+.button{
+background: blue;
+}
+.containerForm{
+    padding: 5rem;
+
+}

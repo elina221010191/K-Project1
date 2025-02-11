@@ -2,7 +2,7 @@ import React from "react";
 import '../styles/shop.css'
 import { FaStar } from "react-icons/fa";
 import { LiaCircleSolid } from "react-icons/lia";
-import shop from "../assets/shop.jpg"
+//import shop from "../assets/shop.jpg"
 function Shop(){
     const cards =[
         {
