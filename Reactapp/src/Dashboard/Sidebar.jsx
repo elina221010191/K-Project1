@@ -1,33 +1,26 @@
-import { IoPersonCircleSharp } from "react-icons/io5";
-import { RxDragHandleDots2 } from "react-icons/rx";
-import { IoIosAdd } from "react-icons/io";
-import { CiMenuKebab } from "react-icons/ci";
-import './Dashboard_Styles/sidebar.css';
-
-
+import React from "react";
+import "./Dashboard_Styles/sidebar.css";
+import { GiMountainCave } from "react-icons/gi";
 function Sidebar(){
-    return(
-        <section className="allClasses">
-        <div className="leftClass">
-          <div className="headerOfIcons"> <div><IoPersonCircleSharp className="loginIcon"/></div> <div className="loginheader">Login</div></div> <br></br>
-          <hr></hr>
-          <div className="divClass"> All Boards(4)</div>
-          <div className="divClass"><RxDragHandleDots2/>Platform Launch</div>
-          <div className="divClass"><RxDragHandleDots2/>Marketing Plan</div>
-          <div className="divClass"><RxDragHandleDots2 className="divClass4"/>Roadmap</div>
-          <div className="divClass"> <IoIosAdd /> Create New Board</div>
-         
-        </div>
-        <hr></hr>
-        <div className="rightClass">
-          
-             <div className="platformHeader">Platform Launch</div>
-             <div className="subHeader"> <button className="addTaskBtn"> <IoIosAdd />Add New Task </button>   <CiMenuKebab /></div>
-          
+return(
+
+       <div className="sidebar">
+  
+        <div className="profile-section">
+          <div className="avatar"><GiMountainCave /></div>
+          <h1>Virtual Dashboard</h1>
         </div>
        
-        </section>
-    )
+        <ul className="board-list">
+          <li className="active">Dashboard</li>
+          <li>Profile</li>
+          <li>Utilities</li>
+          <li>Settings</li>
+          <li>Messages</li>
+          <li>Analytics</li>
+          <li>Integrations</li>
+        </ul>
+    </div>
+)
 }
-
 export default Sidebar;
