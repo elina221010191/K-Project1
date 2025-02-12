@@ -1,7 +1,12 @@
 .tex{
-     background-color: blue;
+     background-color: white;
+     
 }
 .text1{
     background-color: grey;
-    padding-right: 50px; 
+    border-radius: 8px;
+    font-size: 30px;
+}
+.textt{
+    gap: 3rem;
 }
