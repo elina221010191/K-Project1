@@ -13,6 +13,9 @@ import HomePage from './components/HomePage'
 import SinglePage from './components/SinglePage'
 //import ShopPage from './components/ShopPage'
 import HomeProduct from './components/HomeProduct'
+import Contact1 from './components/Contact1'
+import DashboardLayout from './Dashboard/DashboardLayout'
+import Dashboardview from './Dashboard/Dashboardview'
 
 
 
@@ -23,7 +26,7 @@ function App() {
         <Routes>
 
           <Route path='/' element={<Layout/>}>
-          <Route  path="Home" index element={<Home/>} />
+          <Route  path="/" index element={<Home/>} />
           <Route path='Shop' index element={<Shop/>}/>
           <Route path='Venders' index element={<Venders/>}/>
           <Route path='Blog' index element={<Blog/>}/>
@@ -31,6 +34,10 @@ function App() {
           <Route path='/view' element={<HomePage/>}/>
           <Route path="/singlepage/:id" element={<SinglePage/>}/>
           <Route path='/Homeproduct' element={<HomeProduct/>}/>
+          <Route path='/Contact1' element={<Contact1/>}/>
+          </Route>
+          <Route path="/" element={<DashboardLayout/>}>
+            <Route path="/dashboard" element={<Dashboardview/>}/>
           </Route>
           </Routes> 
     </BrowserRouter>

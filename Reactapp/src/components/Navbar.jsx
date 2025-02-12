@@ -78,6 +78,9 @@ function Navbar() {
                 <Link to="/Contact"><li>Contact</li></Link>
                 <Link to="/Homeproduct">
                 <li>Homeproduct</li>
+                <Link to="/Contact1">
+                <li>Contact1</li>
+                </Link>
                 </Link>
                 {/* <Link to="/View"><li>View</li></Link> */}
                 {/* <Link to="/usestateHook"><li>Hook</li></Link> */}
