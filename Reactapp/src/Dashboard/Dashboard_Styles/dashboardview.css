@@ -1,3 +1,22 @@
 .view{
-    background-color: grey;
+    background-color: white;
+}
+.content1{
+    font-size: 20px;
+    background-color: white;
+    color: black ;
+}
+.content2{
+    background-color: white;
+}
+.card{
+    background-color: white;
+    color: black;
+    width: 120px;
+    height: 15vh;
+    gap: 5rem;
+}
+.card-title{
+    font-size: 12px;
+
 }

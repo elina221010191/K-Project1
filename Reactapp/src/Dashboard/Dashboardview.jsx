@@ -1,7 +1,8 @@
 import React from 'react'
 import './Dashboard_Styles/dashboardview.css'
 import { TbHandClick } from "react-icons/tb";
-
+import MoveChart from './MoveChartt';
+import LineChartGraph from './LineChart';
 
 const Dashboardview=()=>
 {
@@ -31,7 +32,18 @@ const Dashboardview=()=>
             image:"",
         }
     ];
+    
     return(
+        <div>
+            {/* <MoveGraph/> */}
+            <div className="content1"><h3>Hello John Doe</h3>
+            <h6>Nice day to work!</h6></div>
+        <div className="content2"><h3>Profile Growth</h3>
+        <h6>Overall Information!</h6></div>
+        <div>
+            <LineChartGraph/>
+            <MoveChart/>
+            </div>
         <div className="card1-container">
                             {cards.map((card) =>(
                                 <div key={card.id} className="card">
@@ -42,6 +54,8 @@ const Dashboardview=()=>
                                         {/* //<BiSolidChevronRightCircle className="iconv" size={40}/> */}
                         </div>
                 ))}
+                    </div>
+
                     </div>
     
     )

@@ -1,12 +1,51 @@
-.tex{
-     background-color: white;
-     
+.Main-Navbar{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap:60px;
+    /* position: fixed; */
 }
-.text1{
-    background-color: grey;
-    border-radius: 8px;
-    font-size: 30px;
+.search{
+    display: flex;
+    flex-direction: row;
+    gap:0px
 }
-.textt{
-    gap: 3rem;
+
+.search span{
+    color:#697BC4;
+    font-size:14px
+}
+.search .search-icon{
+    margin-top: 5px;
+    font-size:14px;
+}
+.Time{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    margin-top: 5px;
+    margin-left:480px;
+    background-color:white;
+    border-radius: 5px;
+    
+}
+.Time span{
+    font-size:14px
+}
+.time-icon{
+    fill:#333;
+    margin-top: 3px;
+}
+.language{
+    display: flex;
+    flex-direction: row;
+    gap:8px
+}
+.language span{
+    font-size: 14px;
+    margin-top: 3px;
+}
+.not-icon{
+    margin-top: 5px;
 }
