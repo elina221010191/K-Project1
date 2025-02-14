@@ -16,6 +16,7 @@ import HomeProduct from './components/HomeProduct'
 import Contact1 from './components/Contact1'
 import DashboardLayout from './Dashboard/DashboardLayout'
 import Dashboardview from './Dashboard/Dashboardview'
+import Profile from './Dashboard/Profile'
 
 
 
@@ -38,6 +39,7 @@ function App() {
           </Route>
           <Route path="/" element={<DashboardLayout/>}>
             <Route path="/dashboard" element={<Dashboardview/>}/>
+            <Route path="/dashboard" element={<Profile/>}/>
           </Route>
           </Routes> 
     </BrowserRouter>

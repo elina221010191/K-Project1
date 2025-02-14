@@ -48,9 +48,11 @@ const data = [
 
 export default function MoveChart() {
   return (
+    <div className="move">
     <LineChart width={300} height={100} data={data}>
       <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
       <XAxis />
     </LineChart>
+    </div>
   );
 }

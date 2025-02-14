@@ -3,6 +3,7 @@ import './Dashboard_Styles/dashboardview.css'
 import { TbHandClick } from "react-icons/tb";
 import MoveChart from './MoveChartt';
 import LineChartGraph from './LineChart';
+import CustomerOrderTable from './TableChart'
 
 const Dashboardview=()=>
 {
@@ -27,22 +28,24 @@ const Dashboardview=()=>
         },
         {
             id:4,
-            title:"Watch",
+            title:"Watch Time",
             content:"45.42",
             image:"",
         }
     ];
     
     return(
-        <div>
-            {/* <MoveGraph/> */}
+        <div className="view">
             <div className="content1"><h3>Hello John Doe</h3>
             <h6>Nice day to work!</h6></div>
-        <div className="content2"><h3>Profile Growth</h3>
-        <h6>Overall Information!</h6></div>
-        <div>
+        {/* <div className="content2"><h3>Profile Growth</h3>
+        <h6>Overall Information!</h6></div> */}
+        <div className="move">
             <LineChartGraph/>
             <MoveChart/>
+            <div className="move1">
+            <CustomerOrderTable/>
+            </div>
             </div>
         <div className="card1-container">
                             {cards.map((card) =>(
@@ -51,6 +54,7 @@ const Dashboardview=()=>
                                     {/* <img src={card.image} alt="card.title" className="card-imagev"></img> */}
                                     <h1 className="card-title" ><TbHandClick />{card.title}</h1>
                                         <p className="card-content">{card.content}</p>
+                                        <p className="card-description">{card.description}</p>
                                         {/* //<BiSolidChevronRightCircle className="iconv" size={40}/> */}
                         </div>
                 ))}
