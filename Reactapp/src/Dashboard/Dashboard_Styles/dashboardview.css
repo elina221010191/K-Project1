@@ -36,5 +36,6 @@
 .move1{
    margin-top: 30px;
    margin-left: 30px;
-   flex-wrap: wrap;
+   display: flex;
+   flex-direction: row;
 }

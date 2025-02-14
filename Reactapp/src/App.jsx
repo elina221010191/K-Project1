@@ -17,6 +17,7 @@ import Contact1 from './components/Contact1'
 import DashboardLayout from './Dashboard/DashboardLayout'
 import Dashboardview from './Dashboard/Dashboardview'
 import Profile from './Dashboard/Profile'
+// import { ThemeProvider } from './Dashboard/DarkMode'
 
 
 
@@ -25,7 +26,6 @@ function App() {
    return(
     <BrowserRouter>
         <Routes>
-
           <Route path='/' element={<Layout/>}>
           <Route  path="/" index element={<Home/>} />
           <Route path='Shop' index element={<Shop/>}/>
@@ -39,7 +39,7 @@ function App() {
           </Route>
           <Route path="/" element={<DashboardLayout/>}>
             <Route path="/dashboard" element={<Dashboardview/>}/>
-            <Route path="/dashboard" element={<Profile/>}/>
+            <Route path="/Profile" element={<Profile/>}/>
           </Route>
           </Routes> 
     </BrowserRouter>

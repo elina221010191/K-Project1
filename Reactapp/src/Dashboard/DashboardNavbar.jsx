@@ -13,8 +13,9 @@ export default function DashboardNavbar()
     return(
         <div className="Main-Navbar">
             <div className='search'><IoIosSearch className='search-icon'/><span><input type="text" placeholder="Search for Stock" className="in"/></span></div>
-            <div className='Time'><MdOutlineAccessTime className='time-icon'/><span>239891-18319</span></div>
+            <div className='Time'><MdOutlineAccessTime className='time-icon'/><span>14:00 AM</span></div>
             <div className='language'><span>EN<FaAngleDown/></span><IoMdNotificationsOutline className='not-icon'/></div>
+           
             </div>
 
     )
