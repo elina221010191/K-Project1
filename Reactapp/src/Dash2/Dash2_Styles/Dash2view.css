@@ -1,0 +1,56 @@
+.bt{
+    border-radius: 8px;
+    color: white;
+    background-color:#197CC4;
+    height: 6vh;
+}
+.ex{
+    margin-left: 10px;
+}
+.view{
+    display: flex;
+    flex-direction: row;
+    background-color:#197CC4;
+    margin-top: 50px;
+    color: white;
+    border-radius: 8px;
+    height: 50vh;
+}
+.explore{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.rock{
+    background-color: #197CC4;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+.card{
+    background-color: lightblue;
+    color: black;
+    width: 120px;
+    height: 15vh;
+
+}
+.card-title{
+    font-size: 12px;
+    color: black;
+}
+.card-content{
+    color: black;
+}
+.card1-container{
+    display: flex;
+    flex-direction: row;
+}
+.move{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.move1{
+   margin-top: 30px;
+   margin-left: 30px;
+   display: flex;
+   flex-direction: row;
+}

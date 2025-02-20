@@ -16,8 +16,15 @@ import HomeProduct from './components/HomeProduct'
 import Contact1 from './components/Contact1'
 import DashboardLayout from './Dashboard/DashboardLayout'
 import Dashboardview from './Dashboard/Dashboardview'
+import Dash2_Layout from './Dash2/Dash2_Layout'
+import Dash2_View from './Dash2/Dash2_View'
+import Dash2_Navbar from './Dash2/Dash2_Navbar'
 import Profile from './Dashboard/Profile'
-// import { ThemeProvider } from './Dashboard/DarkMode'
+import Utilities from './Dashboard/Utilities'
+import { ThemeProvider } from './Dashboard/DarkMode'
+import Dashboard from './Dashboard/DashboardNavbar'
+// import Message from './Dashboard/Message'
+// import Settings from './Dashboard/Settings'
 
 
 
@@ -40,7 +47,14 @@ function App() {
           <Route path="/" element={<DashboardLayout/>}>
             <Route path="/dashboard" element={<Dashboardview/>}/>
             <Route path="/Profile" element={<Profile/>}/>
+            <Route path="/Dashboard" element={<Dashboard/>}/>
+            <Route path="/Utilities" element={<Utilities/>}/>
+            {/* <Route path="/Message" element={<Message/>}/>
+            <Route path="/Settings" element={<settings/>}/> */}
           </Route>
+          <Route path="/" element={<Dash2_Layout/>}>
+            <Route path="/dash2" index element={<Dash2_View/>}/>
+            </Route>
           </Routes> 
     </BrowserRouter>
    )

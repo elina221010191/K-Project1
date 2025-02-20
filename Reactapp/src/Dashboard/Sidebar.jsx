@@ -20,19 +20,19 @@ return(
           <Link to='/Profile'>
           <li>Profile</li>
           </Link>
-          <Link>
+          <Link to="/Utilities">
           <li>Utilities</li>
           </Link>
-          <Link>
+          <Link to="/Settings">
           <li>Settings</li>
           </Link>
-          <Link>
+          <Link to="/Message">
           <li>Messages</li>
           </Link>
-          <Link>
+          <Link to="Analytics">
           <li>Analytics</li>
           </Link>
-          <Link>
+          <Link to="Integrations">
           <li>Integrations</li>
           </Link>
         </ul>
