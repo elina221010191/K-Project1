@@ -1,45 +1,60 @@
 import React from 'react'
-// import './Dashboard_Styles/dashboardview.css'
+
 import { TbHandClick } from "react-icons/tb";
-// import MoveChart from './MoveChartt';
-// import LineChartGraph from './LineChart';
-// import CustomerOrderTable from './TableChart'
-// import ThemeProvider from './DarkMode'
+import { CiMenuKebab } from "react-icons/ci";
 import './Dash2_Styles/dash2view.css'
 import { GoRocket } from "react-icons/go";
+import { CiCalendar } from "react-icons/ci";
 import ViewGraph from './Viewbar'
-// import './Dashboard_Styles/darkmode.css';
-// import TwoChart from './TwoC'
+import { AiOutlineFile } from "react-icons/ai";
+
 const Dash2_View=()=>
 {
     const posts =[
         {
          id:1,
-       title:"New Subscribers",
-      content:"5.093",
-        image:""
+       title:"All saving ",
+      price:"$30200",
+      percentage:"30.6%",
+        icon:<CiCalendar />,
+        color:"blue",
+        colorbg:"lightgrey"
         },
-    //     {
-    //         id:2,
-    //         title:"Streams",
-    //         content:"47,095",
-    //         image:"",
-    //     },
-    //     {
-    //         id:3,
-    //         title:"Engagement",
-    //         content:"25.81",
-    //         image:"",
-    //     },
-    //     {
-    //         id:4,
-    //         title:"Watch Time",
-    //         content:"45.42",
-    //         image:"",
-    //     }
+        {
+            id:1,
+            title:"Page Views",
+           price:"$30200",
+           percentage:"30.6%",
+             icon:<AiOutlineFile />,
+             color:"green",
+             colorbg:"lightorange"
+        },
      ];
+     const postss =[
+        {
+         id:1,
+       title:"All saving ",
+      price:"$30200",
+      percentage:"30.6%",
+        icon:<CiCalendar />,
+        color:"blue",
+        colorbg:"lightgrey"
+        },
+        {
+            id:1,
+            title:"Page Views",
+           price:"$30200",
+           percentage:"30.6%",
+             icon:"Icon",
+             color:"green",
+             colorbg:"lightorange"
+        },
+     ];
+
+
     
     return(
+        <div>
         <div className="view">
              <div className="explore">
             <h1>Explore Redesigned Able Pro</h1>
@@ -48,32 +63,41 @@ const Dash2_View=()=>
         <button type="text" className="bt"><span className="ex">Exclusive on Themeforest </span></button>
         </div>
              <div>
-                <ViewGraph/>
             <GoRocket className="rock" size={50}/>
+            {/* <img src={end}/> */}
             </div>
         <div className="move">
-            {/* <LineChartGraph/>
-            <MoveChart/> */}
+        {/* <ViewGraph/> */}
             <div className="move1">
             {/* <CustomerOrderTable/> */}
+            {/* <ViewGraph/> */}
             <div className="move2">
             {/* <TwoChart/> */}
+            
+        </div>
+
             </div>
             </div>
-            </div>
-        <div className="post1-container">
+       
+
+                    </div>
+                    <div className="post1-container">
                             {posts.map((post) =>(
                                 <div key={post.id} className="post">
-                                     
-                                    {/* <img src={card.image} alt="card.title" className="card-imagev"></img> */}
-                                    <h1 className="post-title" ><TbHandClick />{post.title}</h1>
-                                        <p className="post-content">{post.content}</p>
-                                        <p className="post-description">{post.description}</p>
-                                        {/* //<BiSolidChevronRightCircle className="iconv" size={40}/> */}
+                                  <div className='postHead'>
+                                    <div style={{backgroundColor:`${post.colorbg}`}} >{post.icon}</div>
+                                    <div className='PostTitle'>{post.title}</div>
+                                    <div className='PostMenu'><CiMenuKebab/></div>
+                                    </div> 
+                                  <div className="postHead1">
+                                    <ViewGraph className="graph"/>
+                                    <div>{post.price}</div>
+                                    <div>{post.percentage}</div>
+                                    </div>  
+                                    
                         </div>
                 ))}
                     </div>
-
                     </div>
     
     )

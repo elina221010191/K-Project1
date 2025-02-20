@@ -11,18 +11,18 @@ return(
        <div className="sidebar2">
        {/* <ThemeProvider/> */}
         <div className="profile2-section">
-        <h1 clasName="avatar3">Able</h1>
+       <h1 clasName="avatar3">Able</h1> 
         <div className="avator4">
-          <div className="avatar2"><IoPerson /><BiFilter />
-          <h6>John Smith</h6>
+          {/* <div className="avatar2"><BiFilter /> */}
+          <h6></h6>
           </div>
-          <h6>Administrator</h6>
-          </div>
+          <h6></h6>
+          {/* </div> */}
         </div>
        
         <ul className="board2-list">
-          <h6>Navigation</h6>
-          <Link to='/Dash2'>
+          <h6>NAVIGATION</h6>
+          <Link to='/Statistics'>
           <li className="active2">Dash2</li>
           </Link>
           <Link to='/Default'>
@@ -43,6 +43,22 @@ return(
           <Link to="Integrations">
           <li>Integrations</li>
           </Link> */}
+          <h6 className="active5">WIDGET</h6>
+          <Link to='/Statistics'>
+          <li className="active2">Statistics</li>
+          </Link>
+          <Link to='/Data'>
+          <li className="active3">Data</li>
+          </Link>
+          <Link to="/Analytics">
+          <li>Analytics</li>
+          </Link>
+          <Link to="/Finance">
+          <li>Finance</li>
+          </Link>
+          <Link to="/Logout">
+          <li>Logout</li>
+          </Link>
         </ul>
     </div>
 )
