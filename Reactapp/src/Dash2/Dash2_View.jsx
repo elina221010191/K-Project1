@@ -9,7 +9,7 @@ import ViewGraph from './Viewbar'
 import { AiOutlineFile } from "react-icons/ai";
 import { FaRegCalendar } from "react-icons/fa6";
 import { CiCircleChevDown } from "react-icons/ci";
-
+import LineChartGraph from './LineChart';
 const Dash2_View=()=>
 {
     const posts =[
@@ -23,7 +23,7 @@ const Dash2_View=()=>
         colorbg:"lightgrey"
         },
         {
-            id:1,
+            id:2,
             title:"Page Views",
            price:"$30200",
            percentage:"30.6%",
@@ -32,7 +32,7 @@ const Dash2_View=()=>
              colorbg:"lightorange"
         },
         {
-          id:1,
+          id:3,
           title:"Total Task ",
          price:"$14568",
          percentage:" 30.6%",
@@ -41,7 +41,7 @@ const Dash2_View=()=>
            colorbg:"lightgrey"
          },
          {
-          id:1,
+          id:4,
           title:"Download",
          price:"$30200",
          percentage:"30.6%",
@@ -53,6 +53,7 @@ const Dash2_View=()=>
     
     return(
         <div>
+            <LineChartGraph/>
         <div className="vieww">
              <div className="explored">
             <h1>Explore Redesigned Able Pro</h1>
@@ -65,7 +66,7 @@ const Dash2_View=()=>
             {/* <img src={end}/> */}
             </div>
         <div className="move">
-        {/* <ViewGraph/> */}
+         <ViewGraph/> 
             <div className="move1">
             {/* <CustomerOrderTable/> */}
             {/* <ViewGraph/> */}
