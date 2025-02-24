@@ -1,4 +1,4 @@
-.bt{
+.btd{
     border-radius: 8px;
     color: color;
     background-color:#197CC4;
@@ -13,7 +13,7 @@
     padding-right: 10px;
 
 }
-.view{
+.vieww{
     display: flex;
     flex-direction: row;
     background-color:#197CC4;
@@ -22,7 +22,7 @@
     border-radius: 8px;
     height: 50vh;
 }
-.explore{
+.explored{
     margin-top: 50px;
     margin-left: 50px;
 }
@@ -75,7 +75,8 @@
     display: flex;
     flex-direction: row;
     gap:20px;
-    margin-top:20px
+    margin-top:20px;
+    flex-wrap: wrap;
 }
 .postHead{
     display: flex;

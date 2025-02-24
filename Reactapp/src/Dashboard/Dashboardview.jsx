@@ -7,34 +7,26 @@ import CustomerOrderTable from './TableChart'
 import ThemeProvider from './DarkMode'
 import ReactDOM from 'react-dom';
 import './Dashboard_Styles/darkmode.css';
+import { CiMenuKebab } from "react-icons/ci";
 import TwoChart from './TwoC'
 const Dashboardview=()=>
 {
-    const cards =[
+    const posts =[
         {
             id:1,
             title:"New Subscribers",
             content:"5.093",
-            image:"",
         },
         {
             id:2,
             title:"Streams",
             content:"47,095",
-            image:"",
         },
         {
             id:3,
             title:"Engagement",
             content:"25.81",
-            image:"",
         },
-        {
-            id:4,
-            title:"Watch Time",
-            content:"45.42",
-            image:"",
-        }
     ];
     
     return(
@@ -54,20 +46,26 @@ const Dashboardview=()=>
             </div>
             </div>
             </div>
-        <div className="card1-container">
-                            {cards.map((card) =>(
-                                <div key={card.id} className="card">
-                                     
-                                    {/* <img src={card.image} alt="card.title" className="card-imagev"></img> */}
-                                    <h1 className="card-title" ><TbHandClick />{card.title}</h1>
-                                        <p className="card-content">{card.content}</p>
-                                        <p className="card-description">{card.description}</p>
-                                        {/* //<BiSolidChevronRightCircle className="iconv" size={40}/> */}
+                    <div className="post1-container">
+                            {posts.map((post) =>(
+                                <div key={post.id} className="post">
+                                  <div className='postHead'>
+                                    <div style={{backgroundColor:`${post.colorbg}`}} >{post.icon}</div>
+                                    <div className='PostTitle'>{post.title}</div>
+                                    <div className='PostMenu'><CiMenuKebab/></div>
+                                    </div> 
+                                  <div className="postHead1">
+                                    <div>{post.content}</div>
+                                    </div>  
+                                    
                         </div>
                 ))}
                     </div>
-
+                    <div>
+                      
                     </div>
+                    </div>
+                    
     
     )
 }

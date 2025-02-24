@@ -7,6 +7,8 @@ import { GoRocket } from "react-icons/go";
 import { CiCalendar } from "react-icons/ci";
 import ViewGraph from './Viewbar'
 import { AiOutlineFile } from "react-icons/ai";
+import { FaRegCalendar } from "react-icons/fa6";
+import { CiCircleChevDown } from "react-icons/ci";
 
 const Dash2_View=()=>
 {
@@ -29,38 +31,34 @@ const Dash2_View=()=>
              color:"green",
              colorbg:"lightorange"
         },
-     ];
-     const postss =[
         {
-         id:1,
-       title:"All saving ",
-      price:"$30200",
-      percentage:"30.6%",
-        icon:<CiCalendar />,
-        color:"blue",
-        colorbg:"lightgrey"
-        },
-        {
-            id:1,
-            title:"Page Views",
-           price:"$30200",
-           percentage:"30.6%",
-             icon:"Icon",
-             color:"green",
-             colorbg:"lightorange"
-        },
+          id:1,
+          title:"Total Task ",
+         price:"$14568",
+         percentage:" 30.6%",
+           icon:<CiCalendar />,
+           color:"blue",
+           colorbg:"lightgrey"
+         },
+         {
+          id:1,
+          title:"Download",
+         price:"$30200",
+         percentage:"30.6%",
+           icon:<CiCircleChevDown />,
+           color:"green",
+           colorbg:"lightorange"  
+         },
      ];
-
-
     
     return(
         <div>
-        <div className="view">
-             <div className="explore">
+        <div className="vieww">
+             <div className="explored">
             <h1>Explore Redesigned Able Pro</h1>
             <h6>The Brand new User Interface with power of Bootstrap Components.</h6>
             <h6>Explore the Endless possibilities with Able Pro.</h6>
-        <button type="text" className="bt"><span className="ex">Exclusive on Themeforest </span></button>
+        <button type="text" className="btd"><span className="ex">Exclusive on Themeforest </span></button>
         </div>
              <div>
             <GoRocket className="rock" size={50}/>
@@ -98,7 +96,11 @@ const Dash2_View=()=>
                         </div>
                 ))}
                     </div>
+                    <div>
+                      
                     </div>
+                    </div>
+                    
     
     )
 }
